@@ -24,7 +24,7 @@ jobs:
           java-version: '17'
           distribution: 'microsoft'
 
-      # --- CAMBIO CRÍTICO: Se añade -DskipTests para evitar el fallo de la prueba. ---
+      # --- LÍNEA CORREGIDA: Asegúrate que 'run:' tenga 4 espacios de indentación ---
       - name: Build with Maven (Skipping Tests)
         run: mvn clean install -DskipTests
 
